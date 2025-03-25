@@ -1,0 +1,4 @@
+@carId = 883
+
+DELETE {{host}}/cars/{{carId}}
+Accept: application/json

@@ -1,0 +1,4 @@
+@carId = 883
+
+GET {{host}}/cars/{{carId}}
+Accept: application/json

@@ -1,0 +1,14 @@
+@carId = 1
+
+PUT {{host}}/cars/{{carId}}
+Accept: application/json
+Content-Type: application/json
+
+{
+    "owner_id": 1,
+    "car_id": "AKALI-456",
+    "type": "SUV",
+    "registered": "2023-11-20",
+    "ownbrand": false,
+    "accident": 1
+}

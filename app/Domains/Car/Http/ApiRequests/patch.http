@@ -1,0 +1,9 @@
+@carId = 1
+
+PATCH {{host}}/cars/{{carId}}
+Accept: application/json
+Content-Type: application/json
+
+{
+    "accident": 2
+}

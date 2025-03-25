@@ -1,0 +1,13 @@
+POST {{host}}/cars
+Accept: application/json
+Content-Type: application/json
+
+{
+    "owner_id": 1,
+    "client_id": 56450,
+    "car_id": "DELETABLE-123",
+    "type": "Sedan",
+    "registered": "2024-01-15",
+    "ownbrand": true,
+    "accident": 0
+}

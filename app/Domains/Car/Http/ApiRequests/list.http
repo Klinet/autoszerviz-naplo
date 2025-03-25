@@ -1,0 +1,2 @@
+GET {{host}}/cars
+Accept: application/json
