@@ -1,0 +1,11 @@
+POST {{host}}servicelogs
+Accept: application/json
+Content-Type: application/json
+
+{
+    "car_id": 1,
+    "lognumber": 3,
+    "event_id": 2,
+    "eventtime": "2025-03-25T10:00:00",
+    "document_id": 101
+}

@@ -1,0 +1,11 @@
+@serviceLogId = 1
+
+PUT {{host}}servicelogs/{{serviceLogId}}
+Accept: application/json
+Content-Type: application/json
+
+{
+    "event_id": 3,
+    "eventtime": "2025-03-25T11:30:00",
+    "document_id": 102
+}

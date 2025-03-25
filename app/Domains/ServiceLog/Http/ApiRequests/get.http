@@ -1,0 +1,4 @@
+@serviceLogId = 1
+
+GET {{host}}servicelogs/{{serviceLogId}}
+Accept: application/json

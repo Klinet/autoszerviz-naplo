@@ -1,0 +1,9 @@
+@serviceLogId = 1
+
+PATCH {{host}}servicelogs/{{serviceLogId}}
+Accept: application/json
+Content-Type: application/json
+
+{
+    "document_id": 103
+}

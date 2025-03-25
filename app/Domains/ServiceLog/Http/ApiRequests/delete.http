@@ -1,0 +1,4 @@
+@serviceLogId = 1
+
+DELETE {{host}}servicelogs/{{serviceLogId}}
+Accept: application/json

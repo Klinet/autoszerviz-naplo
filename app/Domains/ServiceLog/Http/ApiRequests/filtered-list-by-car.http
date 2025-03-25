@@ -1,0 +1,5 @@
+@filterCarId = 1
+@filterClientId = 56450
+
+GET {{host}}servicelogs?car_id={{filterCarId}}
+Accept: application/json
