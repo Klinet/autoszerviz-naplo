@@ -48,11 +48,12 @@ create_resource() {
     fi
     mkdir -p "$folder" # A mappát akkor is létre kell hozni
 
-    local namespace="App\\Http\\Resources"  # Alapértelmezett namespace
-    if [ "$domain" != "" ]; then
-        namespace="App\\Domains\\$domain\\Http\\Resources" # Domain-specifikus namespace
-    fi
-    cat <<EOF > "$folder/$resource_name.php"
+    if [ ! -f "$folder/$resource_name.php" ]; then # <<<--- EZ AZ ELLENŐRZÉS VISSZAKERÜLT
+        local namespace="App\\Http\\Resources"
+        if [ "$domain" != "" ]; then
+            namespace="App\\Domains\\$domain\\Http\\Resources"
+        fi
+        cat <<EOF > "$folder/$resource_name.php"
 <?php
 
 namespace $namespace;
@@ -73,8 +74,10 @@ class $resource_name extends JsonResource
     }
 }
 EOF
+    else
+        echo "Resource '$resource_name' already exists, skipping creation." # <<<--- EZ AZ ÜZENET IS
+    fi # <<<--- EZ IS
 }
-
 
 # --- API Controllerek ---
 create_controller "Car" "CarController" "API"
