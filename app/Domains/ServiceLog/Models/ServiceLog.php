@@ -12,6 +12,8 @@ class ServiceLog extends Model
 {
     use HasFactory;
 
+    // ?? - document_id:nullable (munkalap azonosítója)
+
     protected $table = 'services'; // Fontos: a tábla neve a feladatleírás szerint
     // de class ServiceLog lett mert az OOP réteg Service elég foglalt
 

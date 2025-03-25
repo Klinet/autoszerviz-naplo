@@ -21,6 +21,10 @@ class Car extends Model
         'ownbrand',
         'accident',
     ];
+
+    protected $casts = [
+        'registered' => 'datetime',
+    ];
     public function client(): BelongsTo
     {
         return $this->belongsTo(Owner::class, 'client_id');

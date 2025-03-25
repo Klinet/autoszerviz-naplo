@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 abstract class Client extends Model
 {
     // Nem kell a HasFactory, mert absztrakt osztály
-    // lehet Owner vagy Operatro absztrakció pl.
+    // lehet Owner vagy Operator absztrakció pl.
 
     protected $table = 'clients';
 
