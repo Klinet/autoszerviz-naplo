@@ -8,3 +8,4 @@ use Illuminate\Support\Facades\Route;
 Route::apiResource('cars', CarController::class);
 Route::apiResource('owners', OwnerController::class);
 Route::apiResource('servicelogs', ServiceLogController::class);
+Route::get('/owners/search', [OwnerController::class, 'search'])->name('owners.search');
