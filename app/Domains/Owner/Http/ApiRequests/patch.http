@@ -1,0 +1,9 @@
+@ownersId = 63010
+
+PATCH {{host}}/owners/{{ownersId}}
+Accept: application/json
+Content-Type: application/json
+
+{
+    "idcard": "UPDATED123"
+}

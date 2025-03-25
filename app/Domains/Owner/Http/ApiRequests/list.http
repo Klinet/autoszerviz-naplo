@@ -1,0 +1,2 @@
+GET {{host}}/owners
+Accept: application/json

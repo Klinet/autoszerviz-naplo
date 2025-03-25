@@ -1,0 +1,8 @@
+POST {{host}}/owners
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "Minta János",
+    "idcard": "AB123456"
+}

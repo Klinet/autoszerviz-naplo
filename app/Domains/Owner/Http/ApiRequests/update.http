@@ -1,0 +1,10 @@
+@ownerId = 63010
+
+PUT {{host}}/owners/{{ownerId}}
+Accept: application/json
+Content-Type: application/json
+
+{
+    "name": "Frissített Tulaj Név",
+    "idcard": "UJIG9876"
+}

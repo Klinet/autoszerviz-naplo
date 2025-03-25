@@ -1,0 +1,4 @@
+@ownerId = 63010
+
+DELETE {{host}}/owners/{{ownerId}}
+Accept: application/json

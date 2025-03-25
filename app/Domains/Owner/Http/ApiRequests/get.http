@@ -1,0 +1,4 @@
+@ownerId = 63010
+
+GET {{host}}/owners/{{ownerId}}
+Accept: application/json
